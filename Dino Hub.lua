@@ -1,11 +1,11 @@
-local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Sarithprak/Dino-Hub-Evil-Edition-works-with-ArceusX-/main/Dino%20Hub.lua"))()
+local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
 
 local X = Material.Load({
-	Title = "Dino Hub Evil Edition",
+	Title = "Dino Hub",
 	Style = 3,
 	SizeX = 500,
 	SizeY = 350,
-	Theme = "Dark",
+	Theme = "Light",
 	ColorOverrides = {
 		MainFrame = Color3.fromRGB(235,235,235)
 	}
@@ -21,8 +21,8 @@ local Z = X.New({
 
 local A = Y.Button({
 	Text = "Kill All",
-	Callback = function(Kill)
-		Players.Head.Destroy = Kill
+	Callback = function()
+		Players.Humanoid.Head.Destroy
 	end,
 	Menu = {
 		Information = function(self)
@@ -42,9 +42,9 @@ local B = Y.Toggle({
 })
 
 local C = Y.Slider({
-	Text = "Walkspeed",
+	Text = "Slip and... you get the idea",
 	Callback = function(Value)
-		Players.LocalPlayer.Walkspeed(Value)
+		print(Value)
 	end,
 	Min = 200,
 	Max = 400,
