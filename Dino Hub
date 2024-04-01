@@ -1,4 +1,4 @@
-local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Sarithprak/Dino-Hub-Evil-Edition-works-with-ArceusX-/main/Dino%20Hub"))()
+local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Sarithprak/Dino-Hub-Evil-Edition-works-with-ArceusX-/main/Module.lua"))()
 
 local X = Material.Load({
 	Title = "Dino Hub",
